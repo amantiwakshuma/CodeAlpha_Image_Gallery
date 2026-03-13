@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="title">
+    <h2>Image Gallery</h2>
+  </div>
+  <div class="show-image-cont" id="showImageCont">
+      <img src="" class="image" id="fullImg" data-name="">
+      <span class="" onclick="closeFullImg()">X</span>
+    </div>
+  <div class="container">
+    <div class="category-container links">
+      <span class="link menu-active" data-name="all">All</span>
+      <span class="link" data-name="nature">Nature</span>
+      <span class="link" data-name="techno">Techno</span>
+      <span class="link" data-name="people">People</span>
+    </div>
+
+    
+
+    <div class="gallery-wrapper">
+    <div class="gallery">
+      <img src="./images/nature1.jpeg" class="image"  data-name="nature"  onclick="openFullImg(this)">
+      <img src="./images/nature2.jpg" class="image"  data-name="nature"  onclick="openFullImg(this)">
+      <img src="images/website1.jpg"  class="image" data-name="techno" onclick="openFullImg(this)">
+      <img src="images/website2.jpg"  class="image" data-name="techno" onclick="openFullImg(this)">
+      <img src="./images/website1.jpg" class="image"  data-name="techno" onclick="openFullImg(this)">
+      <img src="./images/nature3.webp" class="image"  data-name="nature"  onclick="openFullImg(this)">
+      <img src="images/people.jpg" class="image"  data-name="people" onclick="openFullImg(this)">
+      <img src="./images/nature2.jpg" class="image"  data-name="nature"  onclick="openFullImg(this)">
+      <img src="images/people2.jpg" class="image"  data-name="people" onclick="openFullImg(this)">
+      <img src="images/people3.jpg" class="image"  data-name="people" onclick="openFullImg(this)">
+
+    </div>
+
+  
+  </div>
+    <div class="button-container">
+      <span id="prev" class="btn">Prev</span>
+      <span id="next" class="btn">Next</span>
+      
+    </div>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
